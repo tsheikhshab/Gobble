@@ -2,13 +2,13 @@ import tkinter as tk
 from gobble import Game, GameConfig
 
 class GobbleGUI:
-    """Simple Tkinter interface for the Gobble game."""
+    """Simple Tkinter interface for the Gobbles game."""
 
     def __init__(self):
         self.game = Game()
         self.size = 60
         self.window = tk.Tk()
-        self.window.title("Gobble GUI")
+        self.window.title("Gobbles GUI")
         canvas_size = self.size * GameConfig.BOARD_SIZE
         self.canvas = tk.Canvas(self.window, width=canvas_size, height=canvas_size)
         self.canvas.pack()

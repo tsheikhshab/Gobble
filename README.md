@@ -1,6 +1,6 @@
-# Gobble - Learn to Think Like AlphaGo! 🫧
+# Gobbles - Learn to Think Like AlphaGo! 🫧
 
-Gobble is an educational Go game that teaches you to think like AlphaGo through progressive learning stages. Using playful bubble metaphors and Vygotsky's Zone of Proximal Development (ZPD), it adapts to your skill level while always using AlphaGo's core Monte Carlo Tree Search algorithm underneath.
+Gobbles is an educational Go game that teaches you to think like AlphaGo through progressive learning stages. Using playful bubble metaphors and Vygotsky's Zone of Proximal Development (ZPD), it adapts to your skill level while always using AlphaGo's core Monte Carlo Tree Search algorithm underneath.
 
 ## 🎓 Educational Philosophy
 
@@ -69,11 +69,11 @@ Running `gobble_gui.py` opens a simple Tkinter window so you can play by clickin
 ### Visual Guide
 ```
   1 2 3 4 5
-1 · · · · ·    · = Empty space
-2 · · ○ · ·    ○ = White bubble (AI)
-3 · · ● · ·    ● = Black bubble (You)
-4 · · · · ·    ◦ = White influence
-5 · · · · ·    • = Black influence
+1 + + + + +    + = Empty intersection
+2 + + ○ + +    ○ = White bubble (AI)
+3 + + ● + +    ● = Black bubble (You)
+4 + + + + +    ◦ = White influence
+5 + + + + +    • = Black influence
 ```
 
 ## 🧠 Core Concepts Explained
@@ -163,9 +163,9 @@ The game tracks your progress and advances you when ready:
 - Efficient tree search
 - Minimal memory usage
 
-## 🌈 Why Gobble?
+## 🌈 Why Gobbles?
 
-Traditional Go tutorials can be overwhelming. Gobble makes learning natural by:
+Traditional Go tutorials can be overwhelming. Gobbles makes learning natural by:
 - **Starting simple**: Bubbles are friendlier than stones
 - **Building gradually**: Each level adds complexity
 - **Explaining clearly**: AI shares its thought process
