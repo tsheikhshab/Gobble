@@ -30,7 +30,7 @@ class PlayerProfile:
 class GameConfig:
     """Configuration for the Gobbles game."""
     BOARD_SIZE = 5
-    SYMBOLS = {'empty': '·', 'black': '●', 'white': '○'}
+    SYMBOLS = {'empty': '+', 'black': '●', 'white': '○'}
     LEARNING_MODE = True
     SHOW_INFLUENCE = False
     MCTS_SIMULATIONS = {

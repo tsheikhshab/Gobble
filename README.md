@@ -69,11 +69,11 @@ Running `gobble_gui.py` opens a simple Tkinter window so you can play by clickin
 ### Visual Guide
 ```
   1 2 3 4 5
-1 · · · · ·    · = Empty space
-2 · · ○ · ·    ○ = White bubble (AI)
-3 · · ● · ·    ● = Black bubble (You)
-4 · · · · ·    ◦ = White influence
-5 · · · · ·    • = Black influence
+1 + + + + +    + = Empty intersection
+2 + + ○ + +    ○ = White bubble (AI)
+3 + + ● + +    ● = Black bubble (You)
+4 + + + + +    ◦ = White influence
+5 + + + + +    • = Black influence
 ```
 
 ## 🧠 Core Concepts Explained
