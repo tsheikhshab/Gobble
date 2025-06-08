@@ -28,7 +28,7 @@ class PlayerProfile:
             self.concepts_learned = set()
 
 class GameConfig:
-    """Configuration for the Gobble game."""
+    """Configuration for the Gobbles game."""
     BOARD_SIZE = 5
     SYMBOLS = {'empty': '·', 'black': '●', 'white': '○'}
     LEARNING_MODE = True
@@ -507,7 +507,7 @@ class Game:
             return False
 
     def main_loop(self):
-        print("🫧 Welcome to Gobble - Learn to Think Like AlphaGo! 🫧")
+        print("🫧 Welcome to Gobbles - Learn to Think Like AlphaGo! 🫧")
         print("=" * 50)
         if not self.load_progress():
             print("\n🌟 Starting your journey to Go mastery!")
@@ -527,7 +527,7 @@ class Game:
             move = input("\nYour move: ").strip().lower()
             if move == 'q':
                 self.save_progress()
-                print("\n👋 Thanks for learning with Gobble! See you next time!")
+                print("\n👋 Thanks for learning with Gobbles! See you next time!")
                 break
             elif move == 'h':
                 print("\n📖 Help:")
