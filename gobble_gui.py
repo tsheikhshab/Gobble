@@ -7,7 +7,11 @@ class GobbleGUI:
     def __init__(self):
         self.game = Game()
         self.size = 60
-        self.window = tk.Tk()
+        try:
+            self.window = tk.Tk()
+        except tk.TclError as e:
+            print("Error: Unable to open GUI window. Ensure a graphical display is available and $DISPLAY is set.")
+            raise e
         self.window.title("Gobbles GUI")
         canvas_size = self.size * GameConfig.BOARD_SIZE
         self.canvas = tk.Canvas(self.window, width=canvas_size, height=canvas_size)

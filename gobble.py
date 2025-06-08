@@ -354,6 +354,7 @@ class Game:
             print(f" (using {simulations} simulations like AlphaGo)", end="")
         print("...", end="", flush=True)
         root = MCTSNode(deepcopy(self))
+        start_time = time.time()
         for i in range(simulations):
             node = root
             while node.untried_moves == [] and node.children != []:
@@ -364,8 +365,8 @@ class Game:
             node.backpropagate(result)
             if (i + 1) % max(1, simulations // 10) == 0:
                 print(".", end="", flush=True)
-        elapsed = time.time() - 0
-        print(f" Done! (" + str(round(elapsed,1)) + "s)\n")
+        elapsed = time.time() - start_time
+        print(f" Done! ({round(elapsed,1)}s)\n")
         self.last_ai_analysis = root.get_move_analysis()
         best_r, best_c = root.best_move()
         if best_r == -1:

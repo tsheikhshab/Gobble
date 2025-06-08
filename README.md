@@ -52,9 +52,9 @@ At every level, the AI uses the same Monte Carlo Tree Search algorithm that powe
 ```bash
 git clone https://github.com/yourusername/gobble.git
 cd gobble
-python gobble.py
+python gobbles.py     # start the text version
 python gobble_gui.py  # optional graphical version
-Running `gobble_gui.py` opens a simple Tkinter window so you can play by clicking on the board instead of using the console.
+Running `gobble_gui.py` opens a simple Tkinter window so you can play by clicking on the board instead of using the console. A graphical desktop with Tk installed is required; if you run in a headless environment you may see a "$DISPLAY" error.
 ```
 
 ### Basic Commands
